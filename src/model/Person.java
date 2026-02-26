@@ -1,5 +1,7 @@
 package model;
 
+import main.Hospital;
+
 import java.time.LocalDate;
 import java.time.Period;
 
@@ -10,6 +12,7 @@ public abstract class Person {
     private String surName;
     private int phoneNumber;
 
+    public Person(){}
 
     public Person(int id, String name, String surName, int phoneNumber) {
         this.id = id;
@@ -53,7 +56,7 @@ public abstract class Person {
 
     public abstract String role();
 
-    public abstract void readInformation();
+    public abstract void readInformation(Hospital hospital);
 
 
 

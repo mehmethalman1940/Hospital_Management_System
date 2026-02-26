@@ -15,15 +15,18 @@ public class Prescription {
 
 
     public Prescription() {
+
+    }
+
+    public Prescription(String prescriptionNo, Doctor doctor, Sick sick, ArrayList<String> medicines, LocalDate date, int usagePeriodDay, boolean isActive) {
         this.prescriptionNo = prescriptionNo;
         this.doctor = doctor;
-        this.medicines = medicines;
         this.sick = sick;
+        this.medicines = medicines;
         this.date = date;
         this.usagePeriodDay = usagePeriodDay;
         this.isActive = isActive;
     }
-
 
     public String getPrescriptionNo() {
         return prescriptionNo;

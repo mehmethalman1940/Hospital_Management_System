@@ -9,12 +9,15 @@ public  class Medicine {
 
 
     public Medicine() {
+
+    }
+
+    public Medicine(String name, String dose, String dailyUse, int usagePeriod) {
         this.name = name;
         this.dose = dose;
         this.dailyUse = dailyUse;
         this.usagePeriod = usagePeriod;
     }
-
 
     public String getName() {
         return name;
